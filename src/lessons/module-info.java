@@ -4,6 +4,6 @@ module lesson01stages {
             
 
     //opens example.learn_javafx to javafx.fxml;
-    exports lesson01stages;
-    exports lesson02scenes;
+    exports Lesson01Stages;
+    exports Lesson02Scenes;
 }

@@ -1,8 +1,9 @@
-package lesson01stages;
+package Lesson01Stages;
 
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -26,7 +27,10 @@ public class Stages extends Application {
         stage.setHeight(640);
         stage.setWidth(1080);
 
-        stage.setFullScreen(true);
+        Image icon = new Image("/icon.png");
+        stage.getIcons().add(icon);
+
+        stage.setFullScreen(false);
         stage.setFullScreenExitHint("Press x to exit fullscreen");
         stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("x"));
 
