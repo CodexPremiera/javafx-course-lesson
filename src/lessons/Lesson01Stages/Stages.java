@@ -8,6 +8,8 @@ import javafx.scene.input.KeyCombination;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 
 public class Stages extends Application {
     public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class Stages extends Application {
         stage.setHeight(640);
         stage.setWidth(1080);
 
-        Image icon = new Image("/images/icon.png");
+        Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Lesson01Stages/icon.png")));
         stage.getIcons().add(icon);
 
         stage.setFullScreen(false);

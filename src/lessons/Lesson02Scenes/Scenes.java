@@ -56,7 +56,7 @@ public class Scenes extends Application {
         root.getChildren().add(rectangle);
 
         // Image
-        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/icon.png")));
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Lesson02Scenes/image.png")));
         ImageView imageView = new ImageView(image);
         imageView.setX(460);
         imageView.setY(300);
