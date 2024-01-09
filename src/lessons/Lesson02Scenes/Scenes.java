@@ -12,6 +12,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 /**
  * SCENE is a drawing surface for graphical content and a container for nodes.
  * */
@@ -22,7 +24,7 @@ public class Scenes extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         Group root = new Group();
         Scene scene = new Scene(root, 1080, 640, Color.rgb(164, 164, 144));
 
@@ -54,7 +56,7 @@ public class Scenes extends Application {
         root.getChildren().add(rectangle);
 
         // Image
-        Image image = new Image(getClass().getResourceAsStream("/icon.png"));
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/icon.png")));
         ImageView imageView = new ImageView(image);
         imageView.setX(460);
         imageView.setY(300);

@@ -27,7 +27,7 @@ public class Stages extends Application {
         stage.setHeight(640);
         stage.setWidth(1080);
 
-        Image icon = new Image("/icon.png");
+        Image icon = new Image("/images/icon.png");
         stage.getIcons().add(icon);
 
         stage.setFullScreen(false);
