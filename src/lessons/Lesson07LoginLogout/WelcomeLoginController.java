@@ -1,4 +1,4 @@
-package Lesson07ControllerCommunication;
+package Lesson07LoginLogout;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class WelcomeLandingController {
+public class WelcomeLoginController {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -20,13 +20,19 @@ public class WelcomeLandingController {
     @FXML TextField usernameField;
     @FXML Button loginButton;
 
+    /**
+     * LOGIN FUNCTION
+     * Takes the inputted username from the text field #usernameField.
+     * Upon clicking the login button, the WelcomeLanding.fxml scene is loaded
+     * showing a greeting with username.
+     * */
     public void login(ActionEvent actionEvent) throws IOException {
         String username = usernameField.getText();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("WelcomeLogin.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("WelcomeLanding.fxml"));
         root = loader.load();
 
-        WelcomeLoginController welcomeLoginController = loader.getController();
+        WelcomeLandingController welcomeLoginController = loader.getController();
         welcomeLoginController.displayUsername(username);
 
         stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
