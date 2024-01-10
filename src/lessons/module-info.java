@@ -6,6 +6,7 @@ module lesson01stages {
     opens Lesson04EventHandling to javafx.fxml;
     opens Lesson05Stylesheets to javafx.fxml;
     opens Lesson06SceneSwitching to javafx.fxml;
+    opens Lesson07ControllerCommunication to javafx.fxml;
 
     exports Lesson01Stages;
     exports Lesson02Scenes;
@@ -13,4 +14,5 @@ module lesson01stages {
     exports Lesson04EventHandling;
     exports Lesson05Stylesheets;
     exports Lesson06SceneSwitching;
+    exports Lesson07ControllerCommunication;
 }
