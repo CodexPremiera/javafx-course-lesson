@@ -15,7 +15,7 @@ public class Stylesheet extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("stylesheet.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Stylesheet.fxml"));
             Scene scene = new Scene(root);
 
             String css = this.getClass().getResource("stylesheet.css").toExternalForm();

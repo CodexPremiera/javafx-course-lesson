@@ -15,7 +15,7 @@ public class SceneSwitchApplication extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("scene-01.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Scene01.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
