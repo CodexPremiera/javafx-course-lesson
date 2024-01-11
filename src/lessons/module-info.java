@@ -7,6 +7,7 @@ module lesson01stages {
     opens Lesson05Stylesheets to javafx.fxml;
     opens Lesson06SceneSwitching to javafx.fxml;
     opens Lesson07LoginLogout to javafx.fxml;
+    opens Lesson08FormElements to javafx.fxml;
 
     exports Lesson01Stages;
     exports Lesson02Scenes;
@@ -15,4 +16,5 @@ module lesson01stages {
     exports Lesson05Stylesheets;
     exports Lesson06SceneSwitching;
     exports Lesson07LoginLogout;
+    exports Lesson08FormElements;
 }
